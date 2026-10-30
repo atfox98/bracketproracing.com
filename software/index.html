@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bracket Pro · Bracket Pro Racing</title>
+  <meta name="description" content="Bracket Pro is a logbook, weather station and ET predictor for 1/8 and 1/4 mile bracket racing.">
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/images/logo.svg" alt="Bracket Pro"></a>
+      <nav aria-label="Site">
+        <a href="/software/" aria-current="page">Bracket Pro</a>
+        <a href="/scanner/">Timeslip Scanner</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Bracket Pro</h1>
+    <p class="lead">A logbook, weather station and ET predictor for 1/8 and 1/4 mile bracket racing. Plug in a
+      Bracket Pro weather station, record each run from your timeslip, and Bracket Pro tells you what your car should
+      run in the air you're racing in right now.</p>
+
+    <nav class="cards" aria-label="On this page">
+      <a class="card" href="#weather"><h3>Weather</h3><p>Logged every minute at your track's elevation.</p></a>
+      <a class="card" href="#logbook"><h3>Logbook</h3><p>Every run, laid out like a timeslip, with its weather.</p></a>
+      <a class="card" href="#predictions"><h3>Predictions</h3><p>Three formulas side by side, updated every minute.</p></a>
+    </nav>
+
+    <h2 id="weather">Weather, every minute</h2>
+    <p>The Bracket Pro weather station plugs into your laptop by USB. Bracket Pro reads it every 6 seconds and saves
+      a reading every minute: temperature, humidity, pressure, and the values worked out from them, such as density
+      altitude, air density, dew point and vapor pressure, at the elevation of the track you're at. Each value shows
+      how much it has changed since your last run.</p>
+    <figure>
+      <img src="/images/weather.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>Current conditions, and how each has changed since the last run.</figcaption>
+    </figure>
+    <p>Graphs show any value from the last 15 minutes to 72 hours, with your runs marked on them.</p>
+    <figure>
+      <img src="/images/weather-graphs.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>Graphs with runs marked; hovering over one shows its round, ET and MPH.</figcaption>
+    </figure>
+
+    <h2 id="logbook">Your logbook</h2>
+    <p>Run Entry is laid out like a timeslip: reaction, 60 ft, 330 ft, 594 ft, ET and MPH, then the dial-in, with the
+      splits worked out as you type. Each run keeps the weather it was made in. 1/4 mile tracks add the 1000 ft and
+      1/4 mile ET and MPH. Or skip the typing: the <a href="/scanner/">Timeslip Scanner</a> app fills it in from a
+      photo of the slip.</p>
+    <figure>
+      <img src="/images/run-entry.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>Run Entry.</figcaption>
+    </figure>
+
+    <h2 id="predictions">Predictions</h2>
+    <p>Predictions are only as good as the runs they learn from. <strong>Run Selection</strong> picks them: by car,
+      track, lane, time of day, recent runs, similar weather, similar ET, or one at a time. Every run shows whether
+      it's used, and if not, why.</p>
+    <figure>
+      <img src="/images/run-selection.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>Run Selection: filters on the left, every run's status on the right.</figcaption>
+    </figure>
+    <p><strong>Predict</strong> shows three formulas side by side and their average, updated every time a minute of
+      weather is saved. Each shows how well it fits your runs (R² and typical error) and a chart of the runs and the
+      formula, so you can see which suits your car.</p>
+    <figure>
+      <img src="/images/predict.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>Three predictions and their average.</figcaption>
+    </figure>
+    <p>Formulas fit your runs against one or two conditions: curve and surface fits, weighted and planar fits, a rule
+      of thumb from your last run at your own rates, and machine learning that says how close the next run is likely
+      to be. Advanced users can write their own in Python.</p>
+    <figure>
+      <img src="/images/formulas.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>The formula editor.</figcaption>
+    </figure>
+
+    <h2 id="pager">Pager</h2>
+    <p>With a pager transmitter, Bracket Pro sends the latest predictions, weather and your last run to your crew's
+      pagers, or to yours in the staging lanes, every few minutes. You choose what each line shows.</p>
+    <figure>
+      <img src="/images/pager.png" alt="" width="1440" height="900" loading="lazy">
+      <figcaption>The page format, and a preview of the next page.</figcaption>
+    </figure>
+
+    <h2 id="what-you-need">What you need</h2>
+    <ul>
+      <li>A computer running Windows 10 or 11, macOS 11 or later, or Linux, with a screen at least 1280 × 720.</li>
+      <li>A Bracket Pro weather station (version 3) and its USB cable.</li>
+      <li>Optional: a pager transmitter and pagers.</li>
+      <li>Optional: an iPhone with the <a href="/scanner/">Timeslip Scanner</a> app, and Bluetooth on the computer.</li>
+    </ul>
+    <p>Coming from Bracket Pro 1? Your runs, tracks, formulas and pager numbers come with you.</p>
+    <p>Questions? Email <a href="mailto:support@bracketproracing.com">support@bracketproracing.com</a>.</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 Bracket Pro Racing</span>
+      <a href="mailto:support@bracketproracing.com">support@bracketproracing.com</a>
+      <a href="/privacy/">Privacy policy</a>
+    </div>
+  </footer>
+</body>
+</html>
