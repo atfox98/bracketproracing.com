@@ -11,7 +11,7 @@ of the Bracket Pro repo at `site/`.
   chapter's "When the scanner doesn't connect". Update them when the manual changes.
 - The screenshots in `images/` are copies of the manual's. After `pnpm run docs:screenshots` in
   Bracket Pro, refresh them from the Bracket Pro repo's root:
-  `cp docs/manual/images/{run-entry,weather,weather-graphs,run-selection,predict,formulas,pager,scanner-card,scanner-check,scanner-photo,scanner-run-entry}.png site/images/`
+  `cp docs/manual/images/{run-entry,weather,weather-graphs,run-selection,predict,formulas,pager,scanner-card,scanner-check,scanner-photo,scanner-run-entry,quarter-run-entry,quarter-predict}.png site/images/`
 - **Not** `scanner-pairing.png` or `scanner-flow.png`: they show a real pairing QR code, and the
   pairing data is confidential. Here those codes are covered with one for a YouTube link.
   Cover the code again before replacing either.
